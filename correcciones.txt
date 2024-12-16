@@ -1,0 +1,9 @@
+tipografia toda igual
+logo grande navbar 
+sacar about y form
+colores igual logo, 
+fondo negro letras blancas,
+logos mailto y wpp como esta en ppt
+
+rgba(214,255,52,255)
+#d6ff34
