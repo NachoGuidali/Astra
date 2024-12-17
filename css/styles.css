@@ -63,7 +63,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #000000;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -94,6 +94,7 @@
 
 body {
   margin: 0;
+  width: 100vw !important;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -10974,6 +10975,7 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   min-height: 100vh;
+  min-width: 100vw !important;
   text-align: center;
   color: #fff;
   background-color: black;
