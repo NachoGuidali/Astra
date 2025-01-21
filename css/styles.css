@@ -1234,6 +1234,7 @@ progress {
   }
 }
 @media (min-width: 992px) {
+  
   .col-lg {
     flex: 1 0 0%;
   }
@@ -1403,6 +1404,10 @@ progress {
   }
 }
 @media (min-width: 1200px) {
+  .servicios-div{
+    margin-top: 200px ;
+    padding-bottom: 200px;
+  }
   .col-xl {
     flex: 1 0 0%;
   }
@@ -1946,6 +1951,10 @@ progress {
   }
 }
 @media (max-width: 991.98px) {
+  .servicios-div{
+    margin-top: 10px !important;
+    padding-bottom: 10px;
+  }
   .table-responsive-lg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -10853,10 +10862,7 @@ p {
   background-color: black;
 }
 
-.servicios-div{
-  margin-top: 300px !important;
-  padding-bottom: 200px;
-}
+
 
 
 .page-section h4{
@@ -10936,6 +10942,19 @@ p {
   color: #d6ff34;
 }
 
+.container-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-img img{
+  max-width: 500px;
+}
+.container{
+  max-height: 100vh !important;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
@@ -10970,6 +10989,13 @@ p {
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
   }
+  .header.masthead .masthead-heading {
+    font-size: 5rem;
+    letter-spacing: 40px;
+  }
+  .header.masthead{
+    margin-top: 100px !important;
+  }
 }
 header.masthead {
   padding-top: 10.5rem;
@@ -10992,8 +11018,8 @@ header.masthead {
 
 .btn-header{
   margin-top: 5rem;
-  
-} 
+
+}
 header.masthead .masthead-subheading {
   /* position: absolute;
   bottom: 35vh;
@@ -11014,24 +11040,32 @@ header.masthead .masthead-heading {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-
+@media (min-width: 1281px){
+  header.masthead {
+    padding-top: 15rem !important;
+    padding-bottom: 5rem;
+  } 
+  .page-section {
+    padding: 10rem 0;
+  }
+}
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-top: 5rem ;
+    padding-bottom: 5rem;
   }
   header.masthead .masthead-subheading {
     font-size: 1.5rem;
     font-style: italic;
-    line-height: 1rem;
-    margin-bottom: 0.5rem;
+    line-height: 0.1rem;
+    margin-bottom: 0.1rem;
   }
   header.masthead .masthead-heading {
     font-size: 5rem;
     font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 0.5rem;
+    line-height: 1rem;
+    margin-bottom: 0.1rem;
   }
 }
 #portfolio .portfolio-item {
