@@ -1939,6 +1939,11 @@ progress {
 }
 
 @media (max-width: 575.98px) {
+
+  .container-img img {
+    max-width: 350px !important;
+  }
+
   .table-responsive-sm {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
