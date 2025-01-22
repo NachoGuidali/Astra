@@ -1950,6 +1950,11 @@ progress {
   }
 }
 @media (max-width: 767.98px) {
+
+  .page-section{
+    min-height: 100vh !important;
+  }
+
   .table-responsive-md {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
