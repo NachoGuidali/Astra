@@ -10908,6 +10908,7 @@ p {
 }
 
 .btn-social {
+  background-color: black;
   height: 4.5rem;
   width: 4.5rem;
   display: inline-flex;
