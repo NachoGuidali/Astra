@@ -8,55 +8,211 @@
   <meta name="keywords" content="outsourcing IT, desarrollo de software, externalización, servicios de pago, AstraOutsourcing">
   <meta name="author" content="AstraOutsourcing">
   <link rel="stylesheet" href="css/styles.css" />
-  <!-- Font Awesome icons (free version)-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="icon" href="assets/logo1.ico" type="image/x-icon" />
 </head>
-<body>
+<body class="snap">
 
+  <!-- Header -->
   <header>
-    <div><a href="#hero"><img src="assets/logo1.ico" alt=""></a></div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <div><a href="#hero" aria-label="Ir al inicio"><img src="assets/logo1.ico" alt="AstraOutsourcing"></a></div>
+    <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">&#9776;</div>
     <nav id="navbar">
-      <a href="#servicios">Servicios</a>
+      <a href="#finanzas">Finanzas</a>
+      <a href="#data">Data</a>
+      <a href="#ecommerce">Ecommerce</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <section class="hero" id="hero">
-    <img src="assets/img/bannerr.png" alt="Imagen principal del hero" />
-  </section>
+ <!-- Sección ASTRA (solo logo/banner) -->
+<section class="hero snap-child" id="hero">
+  <img class="parallax" data-speed="0.15" src="assets/img/bannerr.png" alt="Logo principal ASTRA" />
+</section>
 
-  <section id="servicios">
-    <div class="servicios-row">
-      <div class="servicio">DATOS</div>
-      <div class="servicio">IT</div>
-      <div class="servicio">ECOMMERCE</div>
-      <div class="servicio">PAGOS</div>
+<!-- Sección de 3 íconos -->
+<section id="servicios" class="snap-child" aria-labelledby="servicios-title">
+  <h2 id="servicios-title" class="visually-hidden">Servicios</h2>
+  <div class="servicios-row">
+    <a href="#finanzas" class="servicio">FINANZAS</a>
+    <a href="#data" class="servicio">DATA</a>
+    <a href="#ecommerce" class="servicio">ECOMMERCE</a>
+  </div>
+</section>
+
+  <!-- FINANZAS -->
+  <section id="finanzas" class="feature feature--light snap-child">
+    <div class="feature__inner reveal">
+      <div class="feature__copy">
+        <h2 class="feature__title">Finanzas</h2>
+        <p class="feature__subtitle">
+          “Te brindamos visibilidad y control financiero para optimizar la toma de decisiones estratégicas.”
+        </p>
+        <ul class="chips">
+          <li class="chip">CFO Services</li>
+          <li class="chip">Controller</li>
+          <li class="chip">Finanzas as a Service</li>
+          <li class="chip">Simulación de escenarios</li>
+          <li class="chip">Due Diligence</li>
+          <li class="chip">KPIs</li>
+        </ul>
+      </div>
+
+      <div class="feature__media">
+        <div class="panel parallax" data-speed="0.08" aria-hidden="true">
+          <div class="panel__glow"></div>
+          
+          <svg class="panel__img" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración Finanzas">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#8AFF00"/><stop offset="1" stop-color="#CFFF5E"/></linearGradient>
+            </defs>
+            <rect x="24" y="180" width="40" height="40" rx="8" fill="url(#g1)"/>
+            <rect x="84" y="150" width="40" height="70" rx="8" fill="url(#g1)" opacity=".85"/>
+            <rect x="144" y="120" width="40" height="100" rx="8" fill="url(#g1)" opacity=".7"/>
+            <rect x="204" y="95" width="40" height="125" rx="8" fill="url(#g1)" opacity=".55"/>
+            <rect x="264" y="60" width="40" height="160" rx="8" fill="url(#g1)" opacity=".4"/>
+            <polyline points="30,110 100,90 170,120 240,70 310,85 370,40" fill="none" stroke="#D2FF00" stroke-width="3"/>
+            <circle cx="370" cy="40" r="6" fill="#D2FF00"/>
+          </svg>
+          <div class="panel__label">Control &amp; Strategy</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contacto">
-    <div class="iconos-redes">
-      <div class="icono"><a class="btn btn-dark btn-social mx-2" href="mailto:info@astraoutsourcing.com" aria-label="true" target="_blank"><i class="fa fa-envelope"></i></a></div>
-      <div class="icono"><a class="btn btn-dark btn-social mx-2" href="http://api.whatsapp.com/send/?phone=5491150385088" aria-label="Facebook" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
-      <div class="icono"><a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/astra-outsourcing/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
-      <div class="icono"><a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/astra-outsourcing/" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></div>
+  <!-- DATA -->
+  <section id="data" class="feature feature--dark snap-child">
+    <div class="feature__inner reveal">
+      <div class="feature__copy">
+        <h2 class="feature__title">Data</h2>
+        <p class="feature__subtitle">
+          “Convertimos datos en información clara y accionable para impulsar el crecimiento sostenible.”
+        </p>
+        <ul class="chips">
+          <li class="chip">Integración de fuentes</li>
+          <li class="chip">Dashboards en tiempo real</li>
+          <li class="chip">Analítica predictiva</li>
+          <li class="chip">Data governance</li>
+        </ul>
+      </div>
+
+      <div class="feature__media">
+        <div class="panel panel--blue parallax" data-speed="0.08" aria-hidden="true">
+          <div class="panel__glow"></div>
+          <!-- Ilustración -->
+          <svg class="panel__img" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración Data">
+            <g fill="none" stroke="#9EC1FF" stroke-width="2" opacity=".85">
+              <path d="M30,210 C120,120 280,240 370,150"/>
+              <path d="M30,150 C120,60 280,180 370,90" opacity=".55"/>
+              <path d="M30,90 C120,0 280,120 370,30" opacity=".35"/>
+            </g>
+            <g fill="#9EC1FF">
+              <circle cx="90" cy="140" r="5"/><circle cx="180" cy="120" r="5"/><circle cx="270" cy="160" r="5"/><circle cx="330" cy="140" r="5"/>
+            </g>
+            <rect x="44" y="30" width="60" height="36" rx="8" fill="#0E1B3A" stroke="#2A3C6B"/>
+            <rect x="118" y="30" width="60" height="36" rx="8" fill="#0E1B3A" stroke="#2A3C6B"/>
+            <rect x="192" y="30" width="60" height="36" rx="8" fill="#0E1B3A" stroke="#2A3C6B"/>
+          </svg>
+          <div class="panel__label">Insights en Vivo</div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- E-COMMERCE -->
+  <section id="ecommerce" class="feature feature--light snap-child">
+    <div class="feature__inner reveal">
+      <div class="feature__copy">
+        <h2 class="feature__title">Ecommerce</h2>
+        <p class="feature__subtitle">
+          “Escalamos ventas digitales mejorando la experiencia del usuario. Integramos operaciones, marketing y finanzas.”
+        </p>
+        <ul class="chips">
+          <li class="chip">Tiendas online</li>
+          <li class="chip">Gestión de catálogo</li>
+          <li class="chip">Marketing digital</li>
+          <li class="chip">Funnels</li>
+          <li class="chip">Logística</li>
+          <li class="chip">Medios de pago</li>
+          <li class="chip">Analítica de conversión</li>
+        </ul>
+      </div>
+
+      <div class="feature__media">
+        <div class="panel panel--green parallax" data-speed="0.08" aria-hidden="true">
+          <div class="panel__glow"></div>
+          <!-- Ilustración -->
+          <svg class="panel__img" viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración E-commerce">
+            <rect x="40" y="40" width="320" height="180" rx="16" fill="#0F1C12" stroke="#274A2F"/>
+            <rect x="56" y="62" width="120" height="84" rx="10" fill="#122616" stroke="#2E5B39"/>
+            <rect x="190" y="62" width="120" height="84" rx="10" fill="#122616" stroke="#2E5B39"/>
+            <rect x="56" y="154" width="254" height="42" rx="10" fill="#122616" stroke="#2E5B39"/>
+            <circle cx="330" cy="175" r="14" fill="#D2FF00"/>
+            <path d="M320,80 h32 l-8,32 h-24 l-8,-24" fill="none" stroke="#A9F46B" stroke-width="3"/>
+          </svg>
+          <div class="panel__label">Growth Engine</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="snap-child" aria-labelledby="contacto-title">
+    <h2 id="contacto-title" class="section-title reveal">Contactanos</h2>
+    <div class="iconos-redes reveal">
+      <div class="icono"><a class="btn btn-dark btn-social mx-2" href="mailto:info@astraoutsourcing.com" target="_blank" aria-label="Email"><i class="fa fa-envelope"></i></a></div>
+      <div class="icono"><a class="btn btn-dark btn-social mx-2" href="http://api.whatsapp.com/send/?phone=5491150385088" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+      <div class="icono"><a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/astra-outsourcing/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div>
+      <div class="icono"><a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/astra-outsourcing/" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a></div>
+    </div>
+  </section>
+
+  <!-- Footer (fuera del snap para que no “trabe” la navegación) -->
   <footer>
-    <p>&copy; 2025 Astraoutsourcing. Todos los derechos reservados. - Desarrollo <a href="https://supregsolutions.com/">SupReg Solutions</a></p>
+    <p>&copy; 2025 AstraOutsourcing. Todos los derechos reservados. — Desarrollo <a href="https://supregsolutions.com/">SupReg Solutions</a></p>
   </footer>
 
-  
+  <!-- JS -->
   <script>
-    const toggle = document.getElementById("menu-toggle");
-    const navbar = document.getElementById("navbar");
+  // Menú (igual que tenías)
+  const toggle = document.getElementById("menu-toggle");
+  const navbar = document.getElementById("navbar");
+  toggle.addEventListener("click", () => {
+    const isOpen = navbar.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  });
 
-    toggle.addEventListener("click", () => {
-      navbar.classList.toggle("active");
+  // Reveal en scroll (igual que tenías)
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('show');
+        io.unobserve(e.target);
+      }
     });
-  </script>
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Parallax RELATIVO AL VIEWPORT (fix del desfasaje en la última sección)
+  const parallaxEls = Array.from(document.querySelectorAll('.parallax'));
+  const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
+
+  const rafParallax = () => {
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+
+    parallaxEls.forEach(el => {
+      const speed = parseFloat(el.getAttribute('data-speed')) || 0.1;
+      const rect  = el.getBoundingClientRect();
+      const centerOffset = (rect.top + rect.height / 2) - (vh / 2); // distancia respecto del centro del viewport
+      // Movemos poco y con límite para que no “caiga” al final
+      const ty = clamp(-centerOffset * speed * 0.35, -60, 60);
+      el.style.transform = `translate3d(0, ${ty}px, 0)`;
+    });
+
+    requestAnimationFrame(rafParallax);
+  };
+  requestAnimationFrame(rafParallax);
+</script>
+
 </body>
 </html>
